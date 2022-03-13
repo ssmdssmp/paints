@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../js/Learn-JS"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "paints"
+	}
+}

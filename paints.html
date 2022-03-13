@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>paintings</title>
+    <link rel="stylesheet" href="paints.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/19d75cf827.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="top" class="wrapper">
+      <div class="wrapper-headline">Paintings</div>
+      <div class="layout">
+        <a href="#popup" id="slide1" class="slide1 box box1 popup-link"  onclick="chooseCurrentSlide(1)"
+          ><img src="assets/3/IMG_5526.jpg" alt=""
+        /></a>
+        <a href="#popup" id="slide2" class="box box2 popup-link"   onclick="chooseCurrentSlide(2)"
+          ><img src="assets/2/IMG_5448.jpg" alt=""
+        /></a>
+        <a href="#popup" id="slide3" class="box box3 popup-link"  onclick="chooseCurrentSlide(3)"
+          ><img src="assets/1/fullsize.jpg" alt=""
+        /></a>
+        <a href="#popup" class="box box4 popup-link" onclick="chooseCurrentSlide(4)"
+          ><img src="assets/4/IMG_5568.jpg" alt=""
+        /></a>
+      </div>
+    </div>
+    <div class="nav-wrapper">
+      <a href="#" class="logo">OLENA LITVINOVA</a>
+
+      <!-- <input type="checkbox" id="menu-bar" />
+      <label for="menu-bar" class="fas fa-bars"></label> -->
+
+      <nav id="navbar" class="navbar">
+        <a class="navbar-item" href="index.html">HOME</a>
+        <a class="navbar-item" href="paints.html"><span>PAINTINGS</span></a>
+        <!-- <a class="navbar-item" href="events.html">EVENTS</a> -->
+        <a class="navbar-item" href="contacts.html">CONTACTS</a>
+        <a class="navbar-item" href="bio.html">BIOGRAPHY</a>
+      </nav>
+      <div class="sign"><img src="/assets/sign.png" alt="" /></div>
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup-wrapper">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" id="swipe-one">
+              <a href="#navbar" class="popup-close close-popup">x</a>
+              <div class="popup-content">
+                <div class="popup-img">
+                  <img
+                    src="assets/3/IMG_5526.jpg"
+                    class="main-popup-image"
+                    alt=""
+                  />
+                </div>
+                <div class="popup-description">
+                  <div class="popup-headline">
+                    Lights of the night city
+                    <button onclick="changeImage(this)">
+                      Original <img src="assets/3/IMG_5526.jpg" alt="" />
+                    </button>
+                  </div>
+                  <ul class="popup-properties">
+                    <li class="popup-properties-item">H: 23.6'' / 60 cm</li>
+                    <li class="popup-properties-item">W: 31.5'' / 80 cm</li>
+                  </ul>
+                  <!-- <div class="popup-about-title">Details</div> -->
+                  <ul class="popup-about-description">
+                    <li class="details">My beloved Kyiv, your streets are charming...
+
+                    </li>
+                    <li>Year: 2021</li>
+                    <li>Materials: Oil on canvas</li>
+                    <li>Availability: Available</li>
+                  </ul>
+                  <!-- <div class="popup-price">1000 $</div> -->
+                  <div class="popup-photo">
+                    <a class="photo-item" onclick="changeImage(this)"
+                      ><img src="assets/3/IMG_5539.jpg" alt=""
+                    /></a>
+                    <a class="photo-item" onclick="changeImage(this)"
+                      ><img src="assets/3/IMG_5555.jpg" alt=""
+                    /></a>
+                    <a class="photo-item" onclick="changeImage(this)"
+                      ><img src="assets/3/IMG_5532.jpg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#navbar" class="popup-close close-popup">x</a>
+              <div class="popup-content">
+                <div class="popup-img" onclick="changeImage(this)">
+                  <img
+                    src="assets/2/IMG_5448.jpg"
+                    alt=""
+                    class="main-popup-image"
+                    id="first"
+                  />
+                </div>
+                <div class="popup-description">
+                  <div class="popup-headline">
+                    Mother's Garden
+                    <button onclick="changeImage(this)">
+                      Original <img src="assets/2/IMG_5448.jpg" alt="" />
+                    </button>
+                  </div>
+                  <ul class="popup-properties">
+                    <li class="popup-properties-item">H: 31.5'' / 80 cm</li>
+                    <li class="popup-properties-item">W: 23.6'' / 60 cm</li>
+                  </ul>
+                  <!-- <div class="popup-about-title">Details</div> -->
+                  <ul class="popup-about-description">
+                    <li class="details">It is so good that memory keeps bright moments of 
+                      childhood even if they are shrouded with the fog of oblivion
+                    </li>
+                    <li>Year: 2021</li>
+                    <li>Materials: Oil on canvas</li>
+                    <li>Availability: Available</li>
+                  </ul>
+                  <!-- <div class="popup-price">1000 $</div> -->
+                  <div class="popup-photo">
+                    <div class="photo-item" onclick="changeImage(this)">
+                      <img src="assets/2/IMG_5458.jpg" alt="" />
+                    </div>
+                    <div class="photo-item" onclick="changeImage(this)">
+                      <img src="assets/2/IMG_5465.jpg" alt="" />
+                    </div>
+                    <div class="photo-item" onclick="changeImage(this)">
+                      <img src="assets/2/IMG_5474.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#navbar" class="popup-close close-popup">x</a>
+              <div class="popup-content">
+                <div class="popup-img" onclick="changeImage(this)">
+                  <img
+                    src="assets/1/fullsize.jpg"
+                    alt=""
+                    class="main-popup-image"
+                    id="second"
+                  />
+                </div>
+                <div class="popup-description">
+                  <div class="popup-headline">
+                    Cutting the Space
+                    <button onclick="changeImage(this)">
+                      Original <img src="assets/1/fullsize.jpg" alt="" />
+                    </button>
+                  </div>
+                  <ul class="popup-properties">
+                    <li class="popup-properties-item">H: 24'' / 60 cm</li>
+                    <li class="popup-properties-item">W: 16'' / 40 cm</li>
+                  </ul>
+                  <!-- <div class="popup-about-title">Details</div> -->
+                  <ul class="popup-about-description">
+                    <li class="details">There is only a moment of the present time. 
+                      Past has already gone, the future has not yet started. Moment which represents what has already been and decides what will be.
+                    </li>
+                    <li>Year: 2021</li>
+                    <li>Materials: Oil on canvas</li>
+                    <li>Availability: Available</li>
+                
+                  </ul>
+                  <div class="popup-photo">
+                    <div class="photo-item" onclick="changeImage(this)">
+                      <img src="assets/1/detail.jpg" alt="" />
+                    </div>
+                    <div class="photo-item" onclick="changeImage(this)">
+                      <img src="assets/1/zoom.jpg" alt="" />
+                    </div>
+                    <div class="photo-item" onclick="changeImage(this)">
+                      <img src="assets/1/zoom2.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#navbar" class="popup-close close-popup">x</a>
+              <div class="popup-content">
+                <div class="popup-img" onclick="changeImage(this)">
+                  <img
+                    src="assets/4/IMG_5568.jpg"
+                    alt=""
+                    class="main-popup-image"
+                    id="third"
+                  />
+                </div>
+                <div class="popup-description">
+                  <div class="popup-headline">
+                    Through the space of water
+                    <button onclick="changeImage(this)">
+                      Original <img src="assets/4/IMG_5568.jpg" alt="" />
+                    </button>
+                  </div>
+                  <ul class="popup-properties">
+                    <li class="popup-properties-item">H: 31.5'' / 80 cm</li>
+                    <li class="popup-properties-item">W: 51'' / 130 cm</li>
+                  </ul>
+                  <!-- <div class="popup-about-title">Details</div> -->
+                  <ul class="popup-about-description">
+                    <li class="details">Summer storm changes outlines of usual things and fill them with mistique and charm.  Splash, display, emotion.
+
+                    </li>
+                    <li>Year: 2021</li>
+                    <li>Materials: Oil on canvas</li>
+                    <li>Availability: Available</li>
+                  </ul>
+                  <div class="popup-photo">
+                    <div class="photo-item" onclick="changeImage(this)">
+                      <img src="assets/4/IMG_5578.jpg" alt="" />
+                    </div>
+                    <div class="photo-item" onclick="changeImage(this)">
+                      <img src="assets/4/IMG_5599.jpg" alt="" />
+                    </div>
+                    <div class="photo-item" onclick="changeImage(this)">
+                      <img src="assets/4/IMG_5593.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+   <script src="paints.js"></script>
+    <script>
+      function changeImage(event) {
+        document.querySelector(".swiper-slide-active .main-popup-image").src =
+          event.children[0].src;
+      }
+   
+    </script>
+    <!-- <script src="paints.js"></script> -->
+    <!-- <script src="popup.js"></script> -->
+  </body>
+</html>
