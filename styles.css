@@ -1,3 +1,4 @@
+
 /* ALL */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap");
 @font-face {
@@ -18,8 +19,13 @@ body {
 .wrapper {
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: black;
   margin: 0;
 }
@@ -31,9 +37,14 @@ body {
   position: relative;
 }
 .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin: 0px;
   display: flex;
   align-content: center;
@@ -41,21 +52,26 @@ body {
 }
 
 .swiper-slide:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
 }
 
 .swiper-button-prev {
   z-index: 10000;
-  filter: saturate(40%) brightness(360%);
+  -webkit-filter: saturate(40%) brightness(360%);
+          filter: saturate(40%) brightness(360%);
   zoom: 1.2;
 }
 
 .swiper-button-next {
   zoom: 1.2;
   z-index: 10000;
-  filter: saturate(40%) brightness(360%);
+  -webkit-filter: saturate(40%) brightness(360%);
+          filter: saturate(40%) brightness(360%);
 }
 .slider-description {
 	padding:25px;
@@ -67,7 +83,11 @@ body {
   position: absolute;
   top: 60%;
   right: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   /* padding: */
   background-color: rgba(0, 0, 0, 0.6);
@@ -80,8 +100,13 @@ body {
   font-family: "Text";
   /* margin: 0px 0px 0px 20px; */
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   line-height: 2;
   font-size: 30px;
 }
@@ -94,12 +119,18 @@ body {
 	/* font-weight: 700; */
 	/* text-transform: uppercase; */
 	text-align: center;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
 	width: fit-content;
 	background-color: rgba(0,0,0,0.8);
 	font-family: "Text";
 	left:5%;
 	top: 20%;
+  -webkit-transition:1s;
+  -o-transition:1s;
   transition:1s;  
 	/* margin-left:60px;	 */
 }
@@ -108,7 +139,11 @@ body {
 	position:absolute;
 	top:35%;
 	left:5%;
+	width:-webkit-fit-content;
+	width:-moz-fit-content;
 	width:fit-content;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 
 }
@@ -124,6 +159,8 @@ body {
 	font-family: "Headline";
 	font-size: 22px ;
 	padding:15px;
+	-webkit-transition: 0.9s;
+	-o-transition: 0.9s;
 	transition: 0.9s;
 	
 }
@@ -146,7 +183,8 @@ body {
   margin-left: 92px;
 } */
 .main-swiper-image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /* object-position: top; */
   width: 100%;
   /* width:100%; */
@@ -155,8 +193,10 @@ body {
 .vertical {
   position: relative;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: unset;
+  max-width:560px;
 }
 /* .lights{ */
 	/* margin-left:30px; */
@@ -184,25 +224,38 @@ body {
   bottom: 0;
   width: 100%;
   height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1920px;
 }
 .logo {
+  max-width: 300px;
   font-family: "Roboto Serif";
   font-size: 1.3vw;
-  width: 10%;
+  /* width: 10%; */
   white-space: nowrap;
   color: white;
   width: content;
   text-decoration: none;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .logo:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   color: red;
-  transition: 1s;
 }
 .logo a {
   text-decoration: none;
@@ -210,8 +263,12 @@ body {
 nav {
   width: 50%; /* set to 70% when EVENTS will be in the nav list*/
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar-item {
@@ -230,27 +287,45 @@ nav {
   content: "";
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
   background-color: white;
-  transform-origin: bottom right;
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 .navbar-item:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 .sign {
-  width: 10%;
+  max-width: 200px;
+  /* width: 10%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
 }
-/* .sign img {
-} */
+.sign img {
+max-width: 300px;
+}
 
 #menu-bar {
   display: none;
@@ -266,14 +341,22 @@ nav {
     height: 60px;
     margin: 0 auto;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: fixed;
     top: 0;
   }
   nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 90%;
     margin: 0;
   }
@@ -324,25 +407,35 @@ nav {
   }
   .main-swiper-image {
     /* margin-bottom:200px; */
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     /* width: auto; */
     max-width: 100%;
     /* height: auto; */
     overflow: hidden;
   }
   .swiper-slide .main-swiper-image:nth-child(1) {
-    object-fit: cover;
-    object-position: left;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
   }
   #third {
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
 
   .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-content: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: start;
+        align-content: start;
     margin: 0px;
     width: 100%;
   }
